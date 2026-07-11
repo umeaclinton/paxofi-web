@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   description: "Elevate your space",
 };
 
-export default function RootLayout({ children }: Readonly<{
+export default function RootLayout({
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
