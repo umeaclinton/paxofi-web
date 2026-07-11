@@ -1,26 +1,25 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bg-color: #F8F6F0;
+  /* the warm off-white background color */
+  --text-primary: #1A1A1A;
+  /* dark text for high contrast but softer than pure black */
+  --accent-dark: #2B2B2B;
+  /* for buttons and footer */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color;
+  var(--bg--color);
+  color;
+  var(--text-primary);
+  font-family;
+  'Inter',
+  sans-serif;
+  /* Modern, clean font */
+  Margin: 0;
+  padding: 0;
 }
