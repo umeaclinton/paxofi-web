@@ -3,29 +3,42 @@ import { Search, User, ShoppingCart } from 'lucide-react';
 
 export default function Navbar() {
     return (
-        <nav className="w-flex items-center justify-between py-6 px-12 boarder-b boarder-gray-200/50">
+        <nav style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '20px 48px',
+            borderBottom: '1px solid #e5e7eb',
+            backgroundColor: '#F8F6F0'
+        }}>
+
             {/* Brand Logo */}
-            <div className="flex items-center gap-12">
-                <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">+</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{
+                    width: '28px', height: '28px', backgroundColor: 'black',
+                    borderRadius: '50%', display: 'flex', alignItems: 'center',
+                    justifyContent: 'center'
+                }}>
+                    <span style={{ color: 'white', fontSize: '14px', fontWeight: 'bold' }}>+</span>
                 </div>
-                <span className="text-xl font-semibold tracking-tight">Paxofi</span>
+                <span style={{ fontSize: '18px', fontWeight: '600' }}>Paxofi</span>
             </div>
 
             {/* Navigation Links */}
-            <div className="hidden md:flex intems-center gap-8 text-sm font-medium text-gray-600">
-                <Link href="/products" className="hover:text-black transition-colors">Products</Link>
-                <Link href="/products" className="hover:text-black transition-colors">About Us</Link>
-                <Link href="/products" className="hover:text-black transition-colors">Our Store</Link>
-                <Link href="/products" className="hover:text-black transition-colors">Delivery</Link>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+                <Link href="/" style={{ color: '#4b5563', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>Products</Link>
+                <Link href="/about" style={{ color: '#4b5563', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>About Us</Link>
+                <Link href="/store" style={{ color: '#4b5563', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>Our Store</Link>
+                <Link href="/delivery" style={{ color: '#4b5563', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>Delivery</Link>
             </div>
 
             {/* Right Side Icons */}
-            <div className="flex items-center gap-6 text-gray-700">
-                <Search className='w-5 h-5 cusor-pointer hover:text-black transition-colors' />
-                <User className='w-5 h-5 cusor-pointer hover:text-black transition-colors' />
-                <ShoppingCart className='w-5 h-5 cusor-pointer hover:text-black transition-colors' />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '24px', color: '#374151' }}>
+                <Search size={20} style={{ cursor: 'pointer' }} />
+                <User size={20} style={{ cursor: 'pointer' }} />
+                <ShoppingCart size={20} style={{ cursor: 'pointer' }} />
             </div>
+
         </nav>
     );
 }
