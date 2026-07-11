@@ -14,10 +14,10 @@ export default function Navbar() {
 
             {/* Navigation Links */}
             <div className="hidden md:flex intems-center gap-8 text-sm font-medium text-gray-600">
-                <link href="/products" className="hover:text-black transition-colors">Products</link>
-                <link href="/products" className="hover:text-black transition-colors">About Us</link>
-                <link href="/products" className="hover:text-black transition-colors">Our Store</link>
-                <link href="/products" className="hover:text-black transition-colors">Delivery</link>
+                <Link href="/products" className="hover:text-black transition-colors">Products</Link>
+                <Link href="/products" className="hover:text-black transition-colors">About Us</Link>
+                <Link href="/products" className="hover:text-black transition-colors">Our Store</Link>
+                <Link href="/products" className="hover:text-black transition-colors">Delivery</Link>
             </div>
 
             {/* Right Side Icons */}
