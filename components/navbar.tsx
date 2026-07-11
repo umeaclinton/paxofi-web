@@ -1,4 +1,4 @@
-import link from 'next/link';
+import Link from 'next/link';
 import { Search, User, ShoppingCart } from 'lucide-react';
 
 export default function Navbar() {
