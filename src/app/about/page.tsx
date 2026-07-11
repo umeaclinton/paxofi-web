@@ -39,8 +39,7 @@ export default function AboutPage() {
                     maxWidth: '600px',
                     marginBottom: '48px'
                 }}>
-                    At Paxofi, we believe great technology should disappear into the background —
-                    empowering people without getting in the way.
+                    At Paxofi, we believe great technology should disappear into the background empowering people without getting in the way.
                 </p>
 
                 {/* Hero Image */}
@@ -107,7 +106,7 @@ export default function AboutPage() {
                     </h2>
                     <p style={{ fontSize: '16px', color: '#6b7280', lineHeight: '1.9', marginBottom: '20px' }}>
                         We exist to build digital products and technology solutions that solve real problems
-                        for real people. No fluff, no buzzwords — just thoughtful engineering and
+                        for real people. No fluff, no buzzwords, just thoughtful engineering and
                         beautiful design working together.
                     </p>
                     <p style={{ fontSize: '16px', color: '#6b7280', lineHeight: '1.9' }}>
