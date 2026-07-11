@@ -12,14 +12,9 @@
 }
 
 body {
-  background-color;
-  var(--bg--color);
-  color;
-  var(--text-primary);
-  font-family;
-  'Inter',
-  sans-serif;
-  /* Modern, clean font */
-  Margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
   padding: 0;
 }
